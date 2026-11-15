@@ -3,9 +3,16 @@
     --primary-color: darkblue;
     --secondary-color: white;
     --border-color: black;
-    --background-color: #eee;
-    --text-color: #333;
+    --background-color: #ddd;
+    --text-color: #000;
     --shadow-color: gray;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Navigation */
@@ -25,6 +32,10 @@ h1 {
     color: var(--primary-color);
 }
 
+h2 {
+    color: var(--primary-color);
+}
+
 /* Main content */
 main {
     max-width: 840px;
@@ -36,8 +47,10 @@ main img {
     border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
 }
 
+/* Paragraphs */
 p {
     padding: 0;
 }
@@ -45,11 +58,8 @@ p {
 /* Aside */
 aside {
     width: 20em;
-    margin: 1em;
-    border: 1px solid rgb(0 0 0 / 20%);
-    padding: 1em;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    position: relative;
+    text-align: center;
 }
 
 aside img {
@@ -57,9 +67,25 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 /* Footer */
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--border-color);
     text-align: center;
+    clear: both;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
