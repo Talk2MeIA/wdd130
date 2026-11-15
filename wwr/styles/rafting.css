@@ -49,7 +49,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 10px;
 }
 
@@ -67,6 +67,11 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+/* Sections */
+section {
+    border-bottom: 2px solid var(--accent2-color);
 }
 
 /* Hero */
