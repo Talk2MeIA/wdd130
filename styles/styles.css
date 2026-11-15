@@ -1,18 +1,31 @@
+/* CSS Variables */
+:root {
+    --primary-color: darkblue;
+    --secondary-color: white;
+    --border-color: black;
+    --background-color: #eee;
+    --text-color: #333;
+    --shadow-color: gray;
+}
+
+/* Navigation */
 nav {
-    background-color: darkblue;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
     padding: 20px;
 }
 
+/* Heading */
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
+/* Main content */
 main {
     max-width: 840px;
 }
@@ -20,22 +33,23 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 p {
     padding: 0;
 }
 
+/* Aside */
 aside {
     width: 20em;
     margin: 1em;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 1em;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 aside img {
@@ -43,8 +57,9 @@ aside img {
     height: auto;
 }
 
+/* Footer */
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--border-color);
     text-align: center;
 }
