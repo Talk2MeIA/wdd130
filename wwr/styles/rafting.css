@@ -179,3 +179,67 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Contact page starter layout */
+.contact-page > h1 {
+    position: static;
+    opacity: 1;
+    background-color: transparent;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.contact-company {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact-map iframe {
+    width: 100%;
+    min-height: 220px;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.employees h2 {
+    grid-column: 1 / -1;
+}
+
+.employees figure {
+    margin: 0;
+}
+
+.employees figure img {
+    width: 100%;
+    height: auto;
+}
+
+.employees figcaption {
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contact-form-section form {
+    display: grid;
+    gap: 0.5rem;
+    max-width: 560px;
+}
+
+.contact-form-section input,
+.contact-form-section textarea,
+.contact-form-section button {
+    font: inherit;
+    padding: 0.5rem;
+}
+
+.contact-form-section fieldset {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+}
