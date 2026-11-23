@@ -19,6 +19,9 @@
 nav {
     background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
@@ -27,9 +30,33 @@ nav a {
     padding: 20px;
 }
 
+/* Header and Footer */
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+.grid aside {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.grid main {
+    grid-column: 2;
+}
+
 /* Heading */
 h1 {
     color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 h2 {
@@ -37,10 +64,6 @@ h2 {
 }
 
 /* Main content */
-main {
-    max-width: 840px;
-}
-
 main img {
     width: 150px;
     height: auto;
