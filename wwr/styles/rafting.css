@@ -334,6 +334,10 @@ footer {
     border-collapse: collapse;
 }
 
+.trip-table-wrapper {
+    overflow-x: auto;
+}
+
 .trip-table-section th,
 .trip-table-section td {
     border: 1px solid var(--accent1-color);
