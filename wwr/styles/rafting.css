@@ -243,3 +243,140 @@ footer {
     gap: 0.5rem;
     padding: 1rem;
 }
+
+/* Home page hero */
+.home-hero {
+    position: relative;
+}
+
+.home-hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 0.5rem;
+    max-width: 560px;
+}
+
+.newsletter input,
+.newsletter button {
+    font: inherit;
+    padding: 0.5rem;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home-offerings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.home-offerings h2 {
+    grid-column: 1 / -1;
+}
+
+.home-offerings article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.home-offerings article img {
+    width: 100%;
+    height: auto;
+}
+
+/* Trips page starter layout */
+.trips-page > h1 {
+    position: static;
+    opacity: 1;
+    background-color: transparent;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.trip-descriptions h2 {
+    grid-column: 1 / -1;
+}
+
+.trip-card {
+    margin: 0;
+    padding: 0;
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+}
+
+.trip-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+    border: 1px solid var(--accent1-color);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.trip-table-section th {
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+/* Responsive starter rules */
+@media (max-width: 700px) {
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .contact-company,
+    .employees,
+    .trip-descriptions,
+    .home-offerings {
+        grid-template-columns: 1fr;
+    }
+
+    .home-offerings article {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
